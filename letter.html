@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For my babyy</title>
+    <link rel="stylesheet" href="style_letter.css">
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" autoplay loop>
+        <source src="valentine_song.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="letter-container">
+
+        <h1>Hi Yen♡</h1>
+
+        <img src="letter_pic1.png" class="letter-img">
+
+        <p>
+            First of all, of course, Happy Valentine's! I know we've only been talking for like a week, but still, thank you for allowing yourself to be my Valentine. We might not be dating today, but I promise that when you get home, we’ll go out and have a lot of fun together.<br><br>
+            I couldn’t give you an actual flower yet since you’re in Germany, so I built this site to give you a virtual message and of course a bouquet of me. I asked you, and you said I’m your favorite—so that’s why it’s a bouquet ko yung nilagay ko, HAHAHAHA.<br><br>
+            Also, I’m the one who drew the backgrounds. I wanted it to be pink with roses because you said you liked that, so there you go! I hope all of this will make you happy.<br><br>
+            You might be thousands of miles away from me, but I’ll still send all my love to you there. This might even serve as a little confession since we haven’t really had one yet. So, here it is: I just wanna say I like you, Yen. I love everything about you—the way you walk (damn, your aura!), the way you talk (ughh, grabree HAHAHAHA), and the way you act—it makes me feel like I want to treat you as my baby.<br><br>
+            And of course, I find you hot, gorgeous, and above all, cute! I love all those unique little things about you, like using “m” for “me” or “I'm” and saying “really?” when you’re excited or blushing. It attracts me so much, and I even find myself adopting those words too. Every time I do, it reminds me of you.<br><br>
+            Ayan lang. Always take care and Happy Valentine’s again, Yen. Let’s not rush things—we still have a lifetime to spend with each other. I'm sorry ulit about last time.<br><br>
+            –James
+        </p>
+
+        <img src="letter_pic2.jpg" class="letter-img">
+
+    </div>
+
+    <!-- Autoplay Script (with fallback) -->
+    <script>
+        const music = document.getElementById("bgMusic");
+
+        // Try autoplay on load
+        window.addEventListener("load", () => {
+            music.play().catch(() => {
+                console.log("Autoplay blocked. Waiting for interaction.");
+            });
+        });
+
+        // Fallback: play on first tap anywhere
+        document.body.addEventListener("click", () => {
+            music.play();
+        }, { once: true });
+    </script>
+
+</body>
+</html>
